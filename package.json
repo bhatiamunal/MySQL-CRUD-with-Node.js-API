@@ -1,0 +1,18 @@
+{
+  "name": "app",
+  "version": "1.0.1",
+  "description": "MB",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Munal",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "mysql2": "^3.6.2",
+    "nodemon": "^3.0.1"
+  }
+}
