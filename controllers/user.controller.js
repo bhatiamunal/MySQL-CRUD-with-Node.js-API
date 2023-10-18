@@ -37,7 +37,22 @@ router.put('/:id', async (req, res) => {
     else
         res.send('updated successfully.')
 })
+router.post('/login', async (req, res) => {
+    const data = await service.login(req.body)
+    if (data == undefined)
+        res.status(404).json('no record with given ' )
+    else
+        res.send(data)
 
+});
+
+// router.get('/logout', function(request, response, next){
+
+//     request.session.destroy();
+
+//     response.redirect("/");
+
+// });
 
 
 module.exports = router;
