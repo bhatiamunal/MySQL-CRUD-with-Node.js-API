@@ -22,7 +22,7 @@ app.use((err, req, res, next) => {
 db.query("SELECT 1")
     .then(() => {
         console.log('db connection  succeeded.')
-        app.listen(3000,
-            () => console.log('server started at 3000'))
+        app.listen(6000,
+            () => console.log('server started at 6000'))
     })
     .catch(err => console.log('db connection failed. \n' + err))
