@@ -2,12 +2,13 @@ const express = require('express'),
     app = express(),
     bodyparser = require('body-parser');
 require('express-async-errors')
-
+const cors = require('cors')
 const db = require('./db'),
     userRoutes = require('./controllers/user.controller')
 
 
 //middleware
+app.use(cors())
 app.use(bodyparser.json())
 app.use('/api/users', userRoutes)
 app.use((err, req, res, next) => {

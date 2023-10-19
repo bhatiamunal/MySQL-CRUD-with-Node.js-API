@@ -3,7 +3,7 @@ const express = require('express'),
 
 const service = require('../services/user.service')
 
-//http://localhost:3000/api/employees/
+
 router.get('/', async (req, res) => {
     const employees = await service.getAllUser()
     res.send(employees)
