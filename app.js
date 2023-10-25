@@ -19,7 +19,7 @@ app.use((err, req, res, next) => {
 
 //first make sure db connection is successful
 //then start the express server.
-db.query("SELECT 1") 
+db.query("SELECT 1")    
     .then(() => {
         console.log('db connection  succeeded.')
         app.listen(6000,
